@@ -1,5 +1,6 @@
 # 概要
-このライブラリは、vagrant及びdockerを使用して、PostgreSQL構築に成功したライブラリである。環境はwindows10。
+このライブラリは、vagrant及びdockerを使用して、PostgreSQL構築に成功したライブラリです。  
+環境はwindows10になります。  
 
 # 構築手順
 
@@ -68,9 +69,9 @@ ip a
 ```
 
 ## 9.接続確認をする
-pgadminは以下のURLでアクセスできる。  
+pgadminは以下のURLでアクセスできます。  
 http://8で確認したipアドレス:81  
-postgresqlは以下の情報でアクセスできる。
+postgresqlは以下の情報でアクセスできます。
 ### ホスト名
 8で確認したipアドレス
 ### ポート番号
@@ -81,3 +82,9 @@ test
 password
 ### DB名
 sample
+
+### 10.docker-composeの削除
+以下のコマンドを実行します。
+```
+docker-compose down --rmi all --volumes
+```
